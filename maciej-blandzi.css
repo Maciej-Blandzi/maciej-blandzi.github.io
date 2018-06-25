@@ -1,26 +1,31 @@
 body{
   margin:0;
+  font: normal 500 1.4rem  "Monospaced", sans-serif;
+  color: white;
 }
 .top-section{
   min-height: 100vh;
   background: #000000 url("img/keyboard.jpg") no-repeat;
   background-size: cover;
   color: #ffffff;
-  font: normal 500 1.4rem  "Monospaced", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .top-bar{
   height: 3em;
   min-width: 100vw;
-  background-color: #000000;
+  background-color: #080c18;
   display: flex;
   flex-direction: row;
   position: fixed;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 .name{
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
+  justify-content: center;
   min-width:10%;
 }
 
@@ -28,48 +33,46 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  min-width: 85%;
+  min-width: 90%;
   list-style-type: none;
   text-align: right;
-  background-color: #000000;
-  /*border: 1px yellow solid;*/
 }
 
 .menu li{
   display: inline;
   margin-right: 1.7em;
   text-decoration: none;
-  height: 3rem;
-  /*border: 1px white solid;*/
 }
-.menu li:hover{
+.menu li:last-child{
+  margin-right: 3em;
+}
+.menu li:hover,
+.name a:hover{
   color: #d8d8d8;
-  /*background-color: lightcyan;*/
 }
 
-.menu a{
-  text-decoration: none;
+.menu a,
+.name a{
+text-decoration: none;
   color: inherit;
 }
-
-.picture{
-  display: flex;
-  align-items: center;
-  min-width: 2%;
-  background-color: #000000;
-  justify-content: center;
-}
-.top-pic{
-  max-height: 100%;
-  width: auto;
+.headline{
+  /*border: 3px white solid;*/
+  max-width: 700px;
+  padding: 20px;
+  text-align: right;
+  text-shadow: 1px 3px #090d2b;
 }
 .man,
 .story,
 .pics,
 .contact{
-  min-height: 100vh;
-  background-color: gray;
+  min-height: 80vh;
+  background-color: #090d2b;
   color: white;
   font: 10rem bold;
   text-align: center;
+}
+.man{
+  display: flex;
 }
