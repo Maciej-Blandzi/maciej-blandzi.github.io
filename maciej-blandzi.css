@@ -1,6 +1,6 @@
 body{
   margin:0;
-  font: normal 500 1.4rem  "Monospaced", sans-serif;
+  font: normal 500 1.2rem  "Monospaced", sans-serif;
   color: white;
 }
 
@@ -75,7 +75,7 @@ text-decoration: none;
 .story,
 .project,
 .contact {
-  font: normal 500 5rem "Monospaced", sans-serif;
+  font: normal 500 4rem "Monospaced", sans-serif;
   min-height: 70vh;
   background-color: #090d2b;
   color: white;
@@ -99,7 +99,7 @@ text-decoration: none;
   text-align: left;
   /*border: 1px white solid;*/
   padding:30px;
-  margin-top:30px;
+  margin-top:50px;
   text-shadow: 3px 3px #818181;
 }
 
@@ -107,9 +107,14 @@ text-decoration: none;
   width: 80%;
   text-align: left;
   /*border: 1px white solid;*/
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200;
   padding:30px;
   line-height: 1.4;
+}
+
+.logos img{
+  height: 200px;
 }
 .project-pics{
   font-size: 2rem;
@@ -119,6 +124,15 @@ text-decoration: none;
   margin: 3rem
 }
 
+.project-pics img{
+  max-width: 100%;
+  height: 280px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 30px #a9a9a9;
+}
+
+
 .story-pics{
   font-size: 2rem;
   text-align: right;
@@ -127,7 +141,6 @@ text-decoration: none;
   margin: 3rem;
 }
 
-.project-pics img,
 .story-pics img{
   max-width: 100%;
   height: 380px;
@@ -158,6 +171,12 @@ text-decoration: none;
   opacity: 1;
   transition: all .9s;
 }
+
+.goodbye{
+  font-size: 2rem;
+  margin-top: 10rem;
+}
+
 .copyright{
   /*border: 1px white solid;*/
   font: italic 200 1rem arial narrow sans;
