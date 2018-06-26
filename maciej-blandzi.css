@@ -3,11 +3,13 @@ body{
   font: normal 500 1.4rem  "Monospaced", sans-serif;
   color: white;
 }
+
 .top-section{
   min-height: 100vh;
-  background: #000000 url("img/keyboard.jpg") no-repeat;
+  width: 100%;
+  background: #000000 url("img/keyboard.jpg") no-repeat center;
   background-size: cover;
-  color: #ffffff;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +24,7 @@ body{
   position: fixed;
   opacity: 0.75;
 }
+
 .name{
   display: flex;
   align-items: center;
@@ -46,6 +49,7 @@ body{
 .menu li:last-child{
   margin-right: 3em;
 }
+
 .menu li:hover,
 .name a:hover{
   color: #d8d8d8;
@@ -56,23 +60,83 @@ body{
 text-decoration: none;
   color: inherit;
 }
+
 .headline{
-  /*border: 3px white solid;*/
-  max-width: 700px;
-  padding: 20px;
-  text-align: right;
+  font: normal 500 3rem  "Monospaced", sans-serif;
   text-shadow: 1px 3px #090d2b;
+  color: #FFF;
+  width: fit-content;
+  text-align: right;
+  line-height: 1.6;
 }
+
 .man,
 .story,
 .pics,
-.contact{
-  min-height: 80vh;
+.contact {
+  font: normal 500 5rem "Monospaced", sans-serif;
+  min-height: 70vh;
   background-color: #090d2b;
   color: white;
-  font: 10rem bold;
-  text-align: center;
-}
-.man{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width:90%;
+  /*border: 1px yellow solid;*/
+}
+
+.section-head{
+  width: 90%;
+  text-align: left;
+  /*border: 1px white solid;*/
+  padding:30px;
+  margin-top:30px;
+}
+
+.section-description{
+  width: 80%;
+  text-align: left;
+  /*border: 1px white solid;*/
+  font-size: 2rem;
+  padding:30px;
+  line-height: 1.4;
+}
+
+.story-pics{
+  font-size: 2rem;
+  text-align: right;
+  width: 35%;
+  /*border: 1px white solid;*/
+  margin: 3rem;
+}
+
+.story-pics img{
+  max-width: 100%;
+  height: 380px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px #a9a9a9;
+}
+.story-pics-description{
+  margin-right:40px;
+}
+
+.story-pics-hidden{
+  position: relative;
+  top: 120px;
+  opacity: 0.2;
+  transition: all .9s;
+}
+
+.story-pics-shown {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  transition: all .9s;
 }
