@@ -1,11 +1,10 @@
 body{
   margin:0;
-  font: normal 500 1.2rem  "Monospaced", sans-serif;
-  color: white;
+  color: #FFF;
 }
 
 .top-section{
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background: #000000 url("img/keyboard.jpg") no-repeat center;
   background-size: cover;
@@ -15,8 +14,9 @@ body{
   justify-content: center;
 }
 
-.top-bar{
+.nav-bar{
   height: 3em;
+  font: normal 500 1.5rem  "Monospaced", sans-serif;
   min-width: 100vw;
   background-color: #080c18;
   display: flex;
@@ -26,14 +26,14 @@ body{
   z-index: 200;
 }
 
-.name{
+.nav-home{
   display: flex;
   align-items: center;
   justify-content: center;
   min-width:10%;
 }
 
-.menu{
+.nav-menu{
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -42,23 +42,23 @@ body{
   text-align: right;
 }
 
-.menu li{
+.nav-menu li{
   display: inline;
   margin-right: 1.7em;
   text-decoration: none;
 }
 
-.menu li:last-child{
+.nav-menu li:last-child{
   margin-right: 3em;
 }
 
-.menu li:hover,
-.name a:hover{
+.nav-menu li:hover,
+.nav-home a:hover{
   color: #d8d8d8;
 }
 
-.menu a,
-.name a{
+.nav-menu a,
+.nav-home a{
   text-decoration: none;
   color: inherit;
 }
@@ -77,7 +77,7 @@ body{
 .project,
 .contact {
   font: normal 500 4rem "Monospaced", sans-serif;
-  min-height: 70vh;
+  /*min-height: 70vh;*/
   background-color: #090d2b;
   color: white;
   display: flex;
@@ -85,29 +85,35 @@ body{
   align-items: center;
 }
 
-.project-container,
+.project-container{
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: space-around;
+  width:90%;
+  /*border: 1px yellow solid;*/
+}
+
 .story-container{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
   width:90%;
-  border: 1px yellow solid;
+  /*border: 1px yellow solid;*/
 }
-
 .section-head{
   width: 90%;
   text-align: left;
-  border: 1px white solid;
-  padding:30px;
-  margin-top:50px;
+  /*border: 1px white solid;*/
+  margin-top: 10rem;
   text-shadow: 3px 3px #818181;
 }
 
 .section-description{
   width: 80%;
   text-align: left;
-  border: 1px white solid;
+  /*border: 1px white solid;*/
   font-size: 1.8rem;
   font-weight: 200;
   padding:30px;
@@ -115,10 +121,11 @@ body{
 }
 
 .logos{
-  border: 1px pink solid;
+  /*border: 1px pink solid;*/
   display: flex;
   flex-direction: row;
 }
+
 .logos img{
   height: 200px;
   max-width: 80%;
@@ -129,14 +136,13 @@ body{
   font-size: 2rem;
   text-align: right;
   width: 20%;
-  border: 1px white solid;
-  margin: 3rem
+  /*border: 1px white solid;*/
+  /*margin: 3rem*/
 }
 
 .project-pics img{
   width: 100%;
   height: 280px;
-  margin-top: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 30px #a9a9a9;
 }
@@ -145,7 +151,7 @@ body{
   font-size: 2rem;
   text-align: right;
   width: 35%;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
   margin: 3rem;
 }
 
@@ -191,12 +197,13 @@ body{
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 500px){
 
   .project-container,
   .story-container{
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 
   .project-pics{
