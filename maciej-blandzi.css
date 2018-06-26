@@ -47,6 +47,7 @@ body{
   margin-right: 1.7em;
   text-decoration: none;
 }
+
 .menu li:last-child{
   margin-right: 3em;
 }
@@ -58,7 +59,7 @@ body{
 
 .menu a,
 .name a{
-text-decoration: none;
+  text-decoration: none;
   color: inherit;
 }
 
@@ -97,7 +98,7 @@ text-decoration: none;
 .section-head{
   width: 90%;
   text-align: left;
-  /*border: 1px white solid;*/
+  border: 1px white solid;
   padding:30px;
   margin-top:50px;
   text-shadow: 3px 3px #818181;
@@ -106,43 +107,50 @@ text-decoration: none;
 .section-description{
   width: 80%;
   text-align: left;
-  /*border: 1px white solid;*/
+  border: 1px white solid;
   font-size: 1.8rem;
   font-weight: 200;
   padding:30px;
   line-height: 1.4;
 }
 
+.logos{
+  border: 1px pink solid;
+  display: flex;
+  flex-direction: row;
+}
 .logos img{
   height: 200px;
+  max-width: 80%;
+  margin: 0 auto;
 }
+
 .project-pics{
   font-size: 2rem;
   text-align: right;
-  max-width: 20%;
-  /*border: 1px white solid;*/
+  width: 20%;
+  border: 1px white solid;
   margin: 3rem
 }
 
 .project-pics img{
-  max-width: 100%;
+  width: 100%;
   height: 280px;
   margin-top: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 30px #a9a9a9;
 }
 
-
 .story-pics{
   font-size: 2rem;
   text-align: right;
   width: 35%;
-  /*border: 1px white solid;*/
+  border: 1px red solid;
   margin: 3rem;
 }
 
 .story-pics img{
-  max-width: 100%;
+  width: 100%;
   height: 300px;
   margin-top: 1rem;
   border-radius: 5px;
@@ -180,9 +188,10 @@ text-decoration: none;
 .copyright{
   font: italic 200 1rem arial narrow sans;
   margin-top: 5em;
+  margin-bottom: 1em;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
   .project-container,
   .story-container{
@@ -191,12 +200,12 @@ text-decoration: none;
   }
 
   .project-pics{
-    max-width: 70%;
+    min-width: 70%;
     margin: 1rem
   }
 
   .project-pics img{
-    max-width: 100%;
+    width: 100%;
     height: 200px;
   }
 
@@ -206,7 +215,7 @@ text-decoration: none;
   }
 
   .story-pics img{
-    max-width: 100%;
+    width: 100%;
     height: 200px;
   }
 
