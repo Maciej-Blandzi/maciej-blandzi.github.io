@@ -94,17 +94,21 @@ body{
   font-weight: 200;
   padding:30px;
   line-height: 1.6;
+  border: 1px red solid;
 }
 
 .logos{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 2rem;
+  border: 1px white solid;
 }
 
 .logos img{
-  height: 200px;
-  max-width: 80%;
-  margin: 0 auto;
+  max-height: 4rem;
+  /*margin: 0 auto;*/
 }
 
 .project-container{
@@ -113,19 +117,21 @@ body{
   align-items: center;
   justify-content: space-around;
   width:90%;
+  border: 1px yellow solid;
 }
 
-.project-pics{
-  font-size: 2rem;
-  text-align: right;
-  width: 20%;
-}
+/*.project-pics{*/
+  /*font-size: 2rem;*/
+  /*text-align: right;*/
+  /*width: 20%;*/
+/*}*/
 
 .project-pics img{
-  width: 100%;
+  width: 90%;
   height: 280px;
   border-radius: 5px;
-  box-shadow: 0 0 30px #a9a9a9;
+  /*box-shadow: 0 0 30px #a9a9a9;*/
+  padding: 2rem;
 }
 
 .story-container{
