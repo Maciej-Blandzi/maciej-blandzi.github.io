@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var funcBox = document.querySelectorAll('.project-pics');
+  var funcBox = document.querySelectorAll('.project-pics, .pics');
   function showFuncBoxes (){
     funcBox.forEach(function (element) {
       var elementRect = element.getBoundingClientRect();
