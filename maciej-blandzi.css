@@ -24,7 +24,6 @@ body{
   align-items: center;
   justify-content: center;
   min-width:10%;
-  border: 1px yellow solid;
 }
 
 .nav-menu{
@@ -45,18 +44,23 @@ body{
   justify-content: flex-end;
   width: 85%;
   list-style-type: none;
-  border: 1px red solid;
 }
+
 .nav-menu-mobile-drop{
-  background-color: #080c18;
   font: normal 400 1.5rem  "Lato", sans-serif;
   color: white;
-  /*border: 1px white solid;*/
+  border: 1px white solid;
   cursor: pointer;
+  padding: 10px;
 }
 
 .nav-menu-mobile-links {
   background-color: #080c18;
+  position: absolute;
+  top: 4rem;
+  width: 70%;
+  text-align: right;
+  /*display: none;*/
 }
 
 .nav-menu-mobile-links a {
@@ -65,7 +69,9 @@ body{
   color: white;
 }
 
-
+.nav-menu-mobile-drop:hover .nav-menu-mobile-links{
+  display: block;
+}
 /*   ========================================================   */
 .nav-menu li{
   display: inline;
