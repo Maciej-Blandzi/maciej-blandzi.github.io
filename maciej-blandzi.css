@@ -15,11 +15,16 @@ body{
   z-index: 200;
 }
 
+.nav-bar:hover{
+  opacity: 0.9;
+}
+
 .nav-home{
   display: flex;
   align-items: center;
   justify-content: center;
   min-width:10%;
+  border: 1px yellow solid;
 }
 
 .nav-menu{
@@ -31,6 +36,37 @@ body{
   text-align: right;
 }
 
+
+/*     =============    menu mobile    ====================*/
+
+.nav-menu-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 85%;
+  list-style-type: none;
+  border: 1px red solid;
+}
+.nav-menu-mobile-drop{
+  background-color: #080c18;
+  font: normal 400 1.5rem  "Lato", sans-serif;
+  color: white;
+  /*border: 1px white solid;*/
+  cursor: pointer;
+}
+
+.nav-menu-mobile-links {
+  background-color: #080c18;
+}
+
+.nav-menu-mobile-links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*   ========================================================   */
 .nav-menu li{
   display: inline;
   margin-right: 1.7em;
@@ -70,6 +106,7 @@ body{
 }
 
 .man,
+.project,
 .story,
 .contact {
   font: normal 500 4rem "Lato", sans-serif;
@@ -77,6 +114,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 .section-head{
@@ -95,13 +133,7 @@ body{
   line-height: 1.6;
 }
 
-.project{
-  font: normal 500 4rem "Lato", sans-serif;
-  background-color: #090d2b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .logos{
   display: flex;
@@ -127,14 +159,14 @@ body{
 .project-pics{
   font-size: 2rem;
   text-align: right;
-  width: 33%;
+  width: 30%;
 }
 
 .project-pics img{
   width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 0 30px #a9a9a9;
+  box-shadow: 0 0 30px #0f226c;
 }
 
 .story-container{
@@ -185,6 +217,7 @@ body{
 .goodbye{
   font-size: 2rem;
   margin-top: 10rem;
+  text-align: center;
 }
 
 .copyright{
@@ -193,8 +226,13 @@ body{
   margin-bottom: 2em;
 }
 
+/* =========================            mobile        ====================================*/
+
 @media screen and (max-width: 760px){
 
+  .headline{
+    font-size: 2rem;
+  }
   .project-container,
   .story-container{
     display: flex;
@@ -223,7 +261,7 @@ body{
   }
 
   .nav-home{
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .nav-menu{
