@@ -191,7 +191,7 @@ body{
 .story-pics img{
   width: 100%;
   height: auto;
-  margin-top: 1rem;
+  margin-top: 9px;
   border-radius: 5px;
   box-shadow: 0 0 30px #a9a9a9;
 }
@@ -225,9 +225,16 @@ body{
 }
 
 .copyright{
-  font: italic 200 1rem arial narrow sans;
   margin-top: 5em;
   margin-bottom: 2em;
+}
+.contact-area{
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.contact-form{
+
 }
 
 /* =========================            mobile        ====================================*/
