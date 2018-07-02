@@ -51,15 +51,22 @@ body{
 
 .nav-menu-mobile-links-visible{
   display: block;
+  font: normal 400 1.2rem  "Lato", sans-serif;
   background-color: #080c18;
-  position: absolute;
+  position: fixed;
   top: 3rem;
-  min-width: 100%;
+  width: 100%;
   text-align: center;
-  font-size: 1.2rem;
   line-height: 1.4;
   padding: 5px;
+  opacity: 0.75;
+  z-index: 200;
 }
+
+.nav-menu-mobile-links-visible:hover{
+  opacity: 0.9;
+}
+
 
 .nav-menu-mobile-links a {
   display: block;
