@@ -1,3 +1,8 @@
+window.addEventListener('scroll', function (event) {
+  document.querySelector('.top-section').style.backgroundPositionY = (window.pageYOffset * 0.8) +'px';
+})
+
+
 $(document).ready(function () {
   $('a[href^="#"]').on('click', function (event) {
     var target = $($(this).attr('href'));
@@ -12,23 +17,23 @@ $(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  var funcBox = document.querySelectorAll('.project-pics, .pics');
-  function showFuncBoxes (){
-    funcBox.forEach(function (element) {
+  var pics = document.querySelectorAll('.project-pics, .logos, .story-pics');
+  function showPictures (){
+    pics.forEach(function (element) {
       var elementRect = element.getBoundingClientRect();
 
       if (elementRect.top < window.innerHeight - (elementRect.height / 3)) {
-        element.classList.add('project-pics-shown');
+        element.classList.add('pics-shown');
       }
       else {
-        element.classList.remove('project-pics-shown');
+        element.classList.remove('pics-shown');
       }
     });
   }
 
-  showFuncBoxes();
+  showPictures();
 
   document.addEventListener("scroll", function () {
-    showFuncBoxes();
+    showPictures();
   });
 });

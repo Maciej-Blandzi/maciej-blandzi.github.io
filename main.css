@@ -47,10 +47,14 @@ body{
 
 .nav-menu-mobile-links {
   display: none;
+}
+
+.nav-menu-mobile-links-visible{
+  display: block;
   background-color: #080c18;
   position: absolute;
   top: 3rem;
-  min-width: 100vw;
+  min-width: 70%;
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.4;
@@ -67,9 +71,9 @@ body{
   color: #d8d8d8;
 }
 
-.nav-menu-mobile:hover .nav-menu-mobile-links {
-  display: block;
-}
+/*.nav-menu-mobile:hover .nav-menu-mobile-links {*/
+/*display: block;*/
+/*}*/
 
 /*   ========================================================   */
 
@@ -202,16 +206,14 @@ body{
   font-size: 1.5rem;
 }
 
-.project-pics-hidden,
-.story-pics-hidden{
+.pics-hidden{
   position: relative;
   top: 100px;
   opacity: 0.2;
   transition: all .9s;
 }
 
-.project-pics-shown,
-.story-pics-shown {
+.pics-shown {
   position: relative;
   top: 0;
   opacity: 1;
@@ -293,6 +295,14 @@ textarea{
     width: 49%;
   }
 
+  .logos{
+    width: 90%;
+  }
+
+  .logos img{
+    max-height: 2.5rem;
+  }
+
   .story-pics-description{
     margin-right:1rem;
     font-size: 1rem;
@@ -301,7 +311,7 @@ textarea{
 
 @media screen and (max-width: 500px){
 
-   .headline{
+  .headline{
     font-size: 2rem;
   }
 
@@ -338,13 +348,4 @@ textarea{
     padding:10px;
     line-height: 1.4;
   }
-
-  .logos{
-    width: 90%;
-  }
-
-  .logos img{
-    max-height: 2rem;
-  }
-
 }
