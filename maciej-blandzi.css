@@ -35,27 +35,16 @@ body{
   text-align: right;
 }
 
-
 /*     =============    menu mobile    ====================*/
 
 .nav-menu-mobile{
-  position: relative;
-  display: flex;
-  width:100%;
-  margin: 0 3%;
-  border: 1px red solid;
-  align-items: center;
-  justify-content: space-between;
+  display:none;
 }
 
 .nav-menu-mobile-drop{
   font: normal 400 1.5rem  "Lato", sans-serif;
   color: white;
-  border-top: 1px white solid;
-  border-bottom: 1px white solid;
   cursor: pointer;
-  padding: 3px;
-  margin-right: 2rem;
 }
 
 .nav-menu-mobile-links {
@@ -78,12 +67,12 @@ body{
   color: #d8d8d8;
 }
 
-.nav-menu-mobile:hover .nav-menu-mobile-links{
+.nav-menu-mobile:hover .nav-menu-mobile-links {
   display: block;
-  color: red;
 }
 
 /*   ========================================================   */
+
 .nav-menu li{
   display: inline;
   margin-right: 1.7em;
@@ -150,8 +139,6 @@ body{
   line-height: 1.6;
 }
 
-
-
 .logos{
   display: flex;
   flex-direction: row;
@@ -191,7 +178,7 @@ body{
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  width:70%;
+  width:90%;
 }
 
 .story-pics{
@@ -245,18 +232,38 @@ body{
 
 /* =========================            mobile        ====================================*/
 
-@media screen and (min-width: 500px) and (max-width: 780px){
+@media screen and (max-width: 780px){
+
   .story-pics-description{
     margin-right:1rem;
     font-size: 1rem;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+  .nav-menu-mobile{
+    position: relative;
+    display: flex;
+    width:49%;
+    border: 1px red solid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-home{
+    width: 49%;
+    border: 1px yellow solid;
   }
 }
 
 @media screen and (max-width: 500px){
 
-  .headline{
+   .headline{
     font-size: 2rem;
   }
+
   .project-container,
   .story-container{
     display: flex;
@@ -282,22 +289,6 @@ body{
   .story-pics img{
     width: 100%;
     height: 200px;
-  }
-
-  .nav-home{
-    margin-left: 1rem;
-  }
-
-  /*.nav-menu{*/
-    /*display: none;*/
-  /*}*/
-
-  .nav-menu-mobile{
-    visibility: visible;
-  }
-
-  .nav-menu-mobile-drop{
-    margin-right: 1rem;
   }
 
   .section-description{
