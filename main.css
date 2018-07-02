@@ -37,16 +37,13 @@ body{
 
 /*     =============    menu mobile    ====================*/
 
-.nav-menu-mobile{
+.nav-menu-mobile,
+.nav-menu-mobile-links{
   display:none;
 }
 
 .nav-menu-mobile-drop{
   cursor: pointer;
-}
-
-.nav-menu-mobile-links {
-  display: none;
 }
 
 .nav-menu-mobile-links-visible{
@@ -67,7 +64,6 @@ body{
   opacity: 0.9;
 }
 
-
 .nav-menu-mobile-links a {
   display: block;
   text-decoration: none;
@@ -77,10 +73,6 @@ body{
 .nav-menu-mobile-links a:hover {
   color: #d8d8d8;
 }
-
-/*.nav-menu-mobile:hover .nav-menu-mobile-links {*/
-/*display: block;*/
-/*}*/
 
 /*   ========================================================   */
 
