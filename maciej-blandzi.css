@@ -41,7 +41,7 @@ body{
 .nav-menu-mobile{
   position: relative;
   display: flex;
-  width:800%;
+  width:100%;
   margin: 0 3%;
   border: 1px red solid;
   align-items: center;
