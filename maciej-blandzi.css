@@ -126,7 +126,7 @@ body{
 .section-head{
   width: 90%;
   text-align: left;
-  margin-top: 7rem;
+  margin-top: 5rem;
   text-shadow: 3px 3px #818181;
 }
 
@@ -218,6 +218,49 @@ body{
   transition: all .9s;
 }
 
+.contact-area{
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  color: #d8d8d8;
+  min-width: 20%;
+}
+
+.contact-area a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-description{
+  text-align: center;
+  font-size: 1.7rem;
+  color:white;
+}
+
+.contact-form{
+  text-align: center;
+}
+
+input{
+  min-width: 100%;
+  border-radius: 5px;
+  height: 1.3rem;
+}
+
+textarea{
+  min-width: 100%;
+  border-radius: 5px;
+  height: 4rem;
+}
+
+.contact-button{
+  width: 30%;
+  font-size:1.1rem;
+  padding: 5px;
+}
+.contact-button:hover{
+  background-color: #d6d6d6;
+  transition: all .4s;
+}
 .goodbye{
   font-size: 2rem;
   margin-top: 10rem;
@@ -225,18 +268,10 @@ body{
 }
 
 .copyright{
+  font-size: 1rem;
   margin-top: 5em;
   margin-bottom: 2em;
 }
-.contact-area{
-  margin-top: 3rem;
-  font-size: 1.5rem;
-}
-
-.contact-form{
-
-}
-
 /* =========================            mobile        ====================================*/
 
 @media screen and (max-width: 780px){
