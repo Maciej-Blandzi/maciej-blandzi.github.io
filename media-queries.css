@@ -1,0 +1,106 @@
+
+/*  =============================  <780px ========================================*/
+
+@media screen and (max-width: 780px){
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-mobile,
+  .nav-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:49%;
+  }
+
+  .nav-menu-mobile-drop {
+    cursor: pointer;
+  }
+
+  .nav-menu-mobile-links-visible {
+    display: block;
+    position: fixed;
+    top: 3rem;
+    width: 100%;
+    background-color: #080c18;
+    font: normal 400 1.2rem  "Lato", sans-serif;
+    text-align: center;
+    line-height: 1.4;
+    padding: 5px;
+    opacity: 0.9;
+    z-index: 200;
+  }
+
+  .nav-menu-mobile-links a {
+    display: block;
+  }
+
+  .logos {
+    width: 90%;
+  }
+
+  .logos img {
+    max-height: 2.5rem;
+  }
+
+  .story-pics-description {
+    font-size: 1rem;
+  }
+}
+
+
+/*  =============================  <500px ========================================*/
+
+@media screen and (max-width: 500px) {
+
+  .headline {
+    font-size: 2rem;
+  }
+
+  .project-container,
+  .story-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .project-pics,
+  .story-pics {
+    min-width: 80%;
+    margin: 1rem
+  }
+
+  .project-pics img,
+  .story-pics img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section-description {
+    width: 90%;
+    font-size: 1.4rem;
+    padding: 10px;
+    line-height: 1.4;
+  }
+}
+
+/*  =============================  <380px ========================================*/
+
+@media screen and (max-width: 380px) {
+
+  .nav-menu-mobile,
+  .nav-home {
+    display: none;
+  }
+
+  .nav-menu-mobile-icon,
+  .nav-home-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:49%;
+    /*margin-top: .5em;*/
+  }
+}

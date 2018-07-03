@@ -1,25 +1,34 @@
-body{
+body {
   margin:0;
   color: #FFF;
 }
 
-.nav-bar{
-  height: 2em;
-  font: normal 400 1.5rem  "Lato", sans-serif;
-  min-width: 100vw;
-  background-color: #080c18;
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #d8d8d8;
+}
+
+.nav-bar {
   display: flex;
   flex-direction: row;
   position: fixed;
+  min-width: 100vw;
+  height: 2em;
+  background-color: #080c18;
+  font: normal 400 1.5rem  "Lato", sans-serif;
   opacity: 0.75;
   z-index: 200;
 }
 
-.nav-bar:hover{
+.nav-bar:hover {
   opacity: 0.9;
 }
 
-.nav-home{
+.nav-home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,101 +43,61 @@ body{
   list-style-type: none;
 }
 
-/*     =============    menu mobile    ====================*/
-
 .nav-menu-mobile,
-.nav-menu-mobile-links{
+.nav-menu-mobile-links,
+.nav-home-icon,
+.nav-menu-mobile-icon{
   display:none;
 }
 
-.nav-menu-mobile-drop{
-  cursor: pointer;
-}
-
-.nav-menu-mobile-links-visible{
-  display: block;
-  font: normal 400 1.2rem  "Lato", sans-serif;
-  background-color: #080c18;
-  position: fixed;
-  top: 3rem;
-  width: 100%;
-  text-align: center;
-  line-height: 1.4;
-  padding: 5px;
-  opacity: 0.9;
-  z-index: 200;
-}
-
-.nav-menu-mobile-links a {
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.nav-menu-mobile-links a:hover {
-  color: #d8d8d8;
-}
-
-/*   ========================================================   */
-
-.nav-menu li{
+.nav-menu li {
   display: inline;
   margin-right: 1.7em;
 }
 
-.nav-menu li:last-child{
+.nav-menu li:last-child {
   margin-right: 3em;
 }
 
-.nav-menu li:hover,
-.nav-home a:hover{
-  color: #d8d8d8;
-}
-
-.nav-menu a,
-.nav-home a{
-  text-decoration: none;
-  color: inherit;
-}
-
-.top-section{
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   background: #000000 url("img/keyboard.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.headline{
+.headline {
   font: normal 400 3rem  "Lato", sans-serif;
   text-shadow: 1px 3px #090d2b;
   text-align: right;
   line-height: 1.6;
+  margin: 0 1rem;
 }
 
 .man,
 .project,
 .story,
 .contact {
-  font: normal 500 4rem "Lato", sans-serif;
-  background-color: #090d2b;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #090d2b;
+  font: normal 500 4rem "Lato", sans-serif;
   margin: 0;
 }
 
-.section-head{
+.section-head {
   width: 90%;
   text-align: left;
   margin-top: 5rem;
   text-shadow: 3px 3px #818181;
 }
 
-.section-description{
+.section-description {
   width: 80%;
   text-align: left;
   font-size: 1.8rem;
@@ -137,7 +106,7 @@ body{
   line-height: 1.6;
 }
 
-.logos{
+.logos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -145,65 +114,46 @@ body{
   margin: 2rem 0 1rem 0;
 }
 
-.logos img{
+.logos img {
   max-height: 4rem;
   max-width: 10%;
 }
 
-.project-container{
+.project-container,
+.story-container {
   display: flex;
-  flex-direction: row ;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
   width:90%;
 }
 
-.project-pics{
+.project-pics,
+.story-pics {
   font-size: 2rem;
   text-align: right;
   width: 30%;
 }
 
-.project-pics img{
+.project-pics img,
+.story-pics img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 0 30px #0f226c;
+  margin-top: .5rem;
 }
 
-.story-container{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-  width:80%;
-}
-
-.story-pics{
-  font-size: 2rem;
-  text-align: right;
-  width: 35%;
-  margin: 1rem;
-}
-
-.story-pics img{
-  width: 90%;
-  height: auto;
-  margin-top: 9px;
-  border-radius: 5px;
-  box-shadow: 0 0 30px #a9a9a9;
-}
-
-.story-pics-description{
-  margin-right:2rem;
+.story-pics-description {
+  margin-right:1rem;
   font-style: italic;
   font-size: 1.5rem;
 }
 
-.pics-hidden{
+.pics-hidden {
   position: relative;
-  top: 100px;
-  opacity: 0.2;
+  top: 70px;
+  opacity: 0.3;
   transition: all .9s;
 }
 
@@ -214,125 +164,54 @@ body{
   transition: all .9s;
 }
 
-.contact-area{
+.contact-area {
   margin-top: 2rem;
   font-size: 1.4rem;
-  color: #d8d8d8;
   min-width: 20%;
 }
 
-.contact-area a{
-  text-decoration: none;
-  color: inherit;
-}
-
-.contact-area a:hover{
-  color: #fff;
-}
-
-.contact-description{
+.contact-description {
   text-align: center;
   font-size: 1.7rem;
-  color:white;
 }
 
-.contact-form{
+.contact-form {
   text-align: center;
 }
 
-input{
+input,
+textarea {
   min-width: 100%;
-  border-radius: 5px;
   height: 1.3rem;
-}
-
-textarea{
-  min-width: 100%;
   border-radius: 5px;
-  height: 4rem;
-}
-
-.contact-button{
-  width: 30%;
-  font-size:1.1rem;
+  font: normal 300 1.1rem "Lato", sans-serif;
   padding: 5px;
 }
 
-.contact-button:hover{
-  background-color: #d6d6d6;
-  transition: all .4s;
+textarea {
+  height: 4rem;
 }
 
-.goodbye{
+.contact-button {
+  width: 40%;
+  border-radius: 5px;
+  font-size:1.2rem;
+  padding: 5px;
+}
+
+.contact-button:hover {
+  background-color: #c4c4c4;
+  transition: all .8s;
+}
+
+.goodbye {
   font-size: 2rem;
   margin-top: 10rem;
   text-align: center;
 }
 
-.copyright{
+.copyright {
   font-size: 1rem;
   margin-top: 5em;
   margin-bottom: 2em;
-}
-/* =========================            mobile        ====================================*/
-
-@media screen and (max-width: 780px){
-
-  .nav-menu{
-    display: none;
-  }
-
-  .nav-menu-mobile,
-  .nav-home{
-    display: flex;
-    width:49%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logos{
-    width: 90%;
-  }
-
-  .logos img{
-    max-height: 2.5rem;
-  }
-
-  .story-pics-description{
-    margin-right:1rem;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 500px){
-
-  .headline{
-    font-size: 2rem;
-  }
-
-  .project-container,
-  .story-container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .project-pics,
-  .story-pics{
-    min-width: 80%;
-    margin: 1rem
-  }
-
-  .project-pics img,
-  .story-pics img{
-    width: 100%;
-    height: 200px;
-  }
-
-  .section-description{
-    width: 90%;
-    font-size: 1.4rem;
-    padding:10px;
-    line-height: 1.4;
-  }
 }
