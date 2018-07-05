@@ -1,30 +1,17 @@
 
-var menu = document.querySelector('.nav-menu-mobile-drop')
-menu.addEventListener('click', function(){
-  document.querySelector('.nav-menu-mobile-links').classList.add('nav-menu-mobile-links-visible')
-})
-
-var menuIcon = document.querySelector('.nav-menu-mobile-icon')
-menuIcon.addEventListener('click', function(){
-  document.querySelector('.nav-menu-mobile-links').classList.add('nav-menu-mobile-links-visible')
+$('.nav-menu-mobile-drop').on('click', function(){
+  $('.nav-menu-mobile-links').addClass('nav-menu-mobile-links-visible')
 })
 
 
-
-
-
-var links = document.querySelector('.nav-menu-mobile-links')
-links.addEventListener('click', function(){
-  document.querySelector('.nav-menu-mobile-links-visible').classList.remove('nav-menu-mobile-links-visible')
+$('.nav-home-picture, .nav-home-text, .nav-menu-mobile-links').on('click', function(){
+  $('.nav-menu-mobile-links-visible').removeClass('nav-menu-mobile-links-visible')
 })
 
-var homeText = document.querySelector('.nav-home-text')
-homeText.addEventListener('click', function(){
-  document.querySelector('.nav-menu-mobile-links-visible').classList.remove('nav-menu-mobile-links-visible')
-})
 
-var homeIcon = document.querySelector('.nav-home-picture')
-homeIcon.addEventListener('click', function(){
-  document.querySelector('.nav-menu-mobile-links-visible').classList.remove('nav-menu-mobile-links-visible')
+$(':input, textarea').on('focus',function(){
+  $(this).css('background-color','#e9e7ff')
+}).on('blur', function(){
+  $(this).css('background-color','#FFF')
 })
 
