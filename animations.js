@@ -6,7 +6,7 @@ window.addEventListener('scroll', function (event) {
 $('a').on('click', function(){
   $(this).hide().fadeIn(500)
 })
-$('.headline').hide().fadeIn(1000)
+$('.headline').hide().fadeIn(2000)
 
 
 $(document).ready(function () {
