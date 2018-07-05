@@ -3,6 +3,12 @@ window.addEventListener('scroll', function (event) {
 })
 
 
+$('a').on('click', function(){
+  $(this).hide().fadeIn(500)
+})
+$('.headline').hide().fadeIn(1000)
+
+
 $(document).ready(function () {
   $('a[href^="#"]').on('click', function (event) {
     var target = $($(this).attr('href'));
@@ -16,7 +22,7 @@ $(document).ready(function () {
 })
 
 
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function() {
   var pics = document.querySelectorAll('.project-pics, .logos, .story-pics');
   function showPictures (){
     pics.forEach(function (element) {

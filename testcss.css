@@ -1,0 +1,325 @@
+body {
+  margin:0;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #d8d8d8;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  min-width: 100vw;
+  height: 2em;
+  background-color: #080c18;
+  font: normal 400 1.5rem  "Lato", sans-serif;
+  opacity: 0.75;
+  z-index: 200;
+}
+
+.nav-bar:hover {
+  opacity: 0.9;
+}
+
+.nav-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width:10%;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 90%;
+  list-style-type: none;
+}
+
+.nav-menu-mobile,
+.nav-menu-mobile-links,
+.nav-home-icon,
+.nav-menu-mobile-icon{
+  display:none;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-right: 1.7em;
+}
+
+.nav-menu li:last-child {
+  margin-right: 3em;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: #000000 url("img/keyboard.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.headline {
+  font: normal 400 3rem  "Lato", sans-serif;
+  text-shadow: 1px 3px #090d2b;
+  text-align: right;
+  line-height: 1.6;
+  margin: 0 1rem;
+}
+
+.man,
+.project,
+.story,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #090d2b;
+  font: normal 500 4rem "Lato", sans-serif;
+  margin: 0;
+}
+
+.section-head {
+  width: 90%;
+  text-align: left;
+  margin-top: 5rem;
+  text-shadow: 3px 3px #818181;
+}
+
+.section-description {
+  width: 80%;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding:30px;
+  line-height: 1.6;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: 2rem 0 1rem 0;
+}
+
+.logos img {
+  max-height: 4rem;
+  max-width: 10%;
+}
+
+.project-container,
+.story-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width:90%;
+}
+
+.project-pics,
+.story-pics {
+  font-size: 2rem;
+  text-align: right;
+  width: 30%;
+}
+
+.project-pics img,
+.story-pics img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 30px #0f226c;
+  margin-top: .5rem;
+}
+
+.story-pics-description {
+  margin-right:1rem;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.pics-hidden {
+  position: relative;
+  top: 70px;
+  opacity: 0.3;
+  transition: all .9s;
+}
+
+.pics-shown {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  transition: all .9s;
+}
+
+.contact-area {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  min-width: 20%;
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+input,
+textarea {
+  min-width: 100%;
+  height: 1.3rem;
+  border-radius: 5px;
+  font: normal 300 1.1rem "Lato", sans-serif;
+  padding: 5px;
+}
+
+textarea {
+  height: 4rem;
+}
+
+.contact-button {
+  width: 40%;
+  border-radius: 5px;
+  font-size:1.2rem;
+  padding: 5px;
+  background-color: #bdbdbd;
+}
+
+.contact-button:hover {
+  background-color: #ffffff;
+  transition: all .8s;
+}
+
+.goodbye {
+  font-size: 2rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1rem;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+
+/*  =============================  <780px ========================================*/
+
+@media screen and (max-width: 780px){
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-mobile,
+  .nav-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:49%;
+  }
+
+  .nav-menu-mobile-drop {
+    cursor: pointer;
+  }
+
+  .nav-menu-mobile-links-visible {
+    display: block;
+    position: fixed;
+    top: 3rem;
+    width: 100%;
+    background-color: #080c18;
+    font: normal 400 1.2rem  "Lato", sans-serif;
+    text-align: center;
+    line-height: 1.4;
+    padding: 5px;
+    opacity: 0.9;
+    z-index: 200;
+  }
+
+  .nav-menu-mobile-links a {
+    display: block;
+  }
+
+  .logos {
+    width: 90%;
+  }
+
+  .logos img {
+    max-height: 2.5rem;
+  }
+
+  .story-pics-description {
+    font-size: 1rem;
+  }
+}
+
+
+/*  =============================  <500px ========================================*/
+
+@media screen and (max-width: 500px) {
+
+  .headline {
+    font-size: 2rem;
+  }
+
+  .project-container,
+  .story-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .project-pics,
+  .story-pics {
+    min-width: 80%;
+    margin: 1rem
+  }
+
+  .project-pics img,
+  .story-pics img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section-description {
+    width: 90%;
+    font-size: 1.4rem;
+    padding: 10px;
+    line-height: 1.4;
+  }
+}
+
+/*  =============================  <380px ========================================*/
+
+@media screen and (max-width: 380px) {
+
+  .nav-menu-mobile,
+  .nav-home {
+    display: none;
+  }
+
+  .nav-menu-mobile-icon,
+  .nav-home-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:49%;
+    /*margin-top: .5em;*/
+  }
+}git
