@@ -1,6 +1,6 @@
 
-$('.nav-menu-mobile-drop').on('click', function(){
-  $('.nav-menu-mobile-links').addClass('nav-menu-mobile-links-visible')
+$('.nav-menu-mobile-drop').on('click mouseover', function(){
+  $('.nav-menu-mobile-links').addClass('nav-menu-mobile-links-visible').toggle()
 })
 
 

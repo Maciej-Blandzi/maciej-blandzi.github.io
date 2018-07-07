@@ -10,7 +10,7 @@ $('.headline').hide().fadeIn(2000)
 
 
 
-$(document).ready(function () {
+$(function () {
   $('a[href^="#"]').on('click', function (event) {
     var target = $($(this).attr('href'));
     if (target.length) {
@@ -23,7 +23,7 @@ $(document).ready(function () {
 })
 
 
-$(document).ready(function() {
+$(function() {
   var pics = document.querySelectorAll('.project-pics, .logos, .story-pics');
   function showPictures (){
     pics.forEach(function (element) {
