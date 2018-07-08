@@ -8,7 +8,15 @@ $(window).on('scroll', function (event) {
 $('a:not(".http")').on('click', function(){
   $(this).hide().fadeIn(500)
 })
-$('.headline').hide().fadeIn(2000)
+
+
+$('.headline').hide().fadeIn(2000).on('click', function(){
+  $(this).fadeOut(300).fadeIn(1200)
+})
+
+$('.top-section').on('click', function(){
+  $('.headline').fadeOut(300).fadeIn(1200)
+})
 
 
 
