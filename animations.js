@@ -1,5 +1,7 @@
 $(window).on('scroll', function (event) {
   document.querySelector('.top-section').style.backgroundPositionY = (window.pageYOffset * 0.8) +'px';
+
+  // $('.top-section').style.backgroundPositionY = (window.pageYOffset * 0.8) +'px';
 })
 
 

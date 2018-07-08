@@ -1,11 +1,11 @@
 
 $('.nav-menu-mobile-drop').on('click mouseover', function(){
-  $('.nav-menu-mobile-links').addClass('nav-menu-mobile-links-visible').toggle()
+  $('.nav-menu-mobile-links').addClass('nav-menu-mobile-links-visible').slideToggle(600)
 })
 
 
 $('.nav-home-picture, .nav-home-text, .nav-menu-mobile-links').on('click', function(){
-  $('.nav-menu-mobile-links-visible').removeClass('nav-menu-mobile-links-visible')
+  $('.nav-menu-mobile-links-visible').slideUp('nav-menu-mobile-links-visible')
 })
 
 
