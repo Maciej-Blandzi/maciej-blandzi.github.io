@@ -9,10 +9,24 @@ $('a:not(".http")').on('click', function(){
   $(this).hide().fadeIn(500)
 })
 
+const $head = $('span.head')
 
-$('.headline').hide().fadeIn(2000).on('click', function(){
-  $(this).fadeOut(300).fadeIn(1200)
+$head.hide().each(function(index){
+  $(this)
+    .delay(500 * index)
+    .fadeIn(3000)})
+    .on('click', function(){$(this).fadeOut(300).fadeIn(1200)
 })
+
+
+// =====    headline grow
+$(function(){
+  $('section.top-section').animate({
+    fontSize: '+=32',
+  },1500)
+})
+
+
 
 $('.top-section').on('click', function(){
   $('.headline').fadeOut(300).fadeIn(1200)
