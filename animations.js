@@ -4,11 +4,21 @@ $(window).on('scroll', function (event) {
   // $('.top-section').style.backgroundPositionY = (window.pageYOffset * 0.8) +'px';
 })
 
-
+// ================== menu items
 $('a:not(".http")').on('click', function(){
   $(this).hide().fadeIn(500)
 })
 
+
+// =====    headline grow
+$(function() {
+  $('section.top-section').animate({
+    fontSize: '+=32',
+  }, 1500)
+})
+
+
+// ===================  headline display delay
 const $head = $('span.head')
 
 $head.hide().each(function(index){
@@ -19,20 +29,14 @@ $head.hide().each(function(index){
 })
 
 
-// =====    headline grow
-$(function(){
-  $('section.top-section').animate({
-    fontSize: '+=32',
-  },1500)
-})
 
-
-
+// =============== headline re-appearing
 $('.top-section').on('click', function(){
   $('.headline').fadeOut(300).fadeIn(1200)
 })
 
 
+// ===================== smooth scroll ====
 
 $(function () {
   $('a[href^="#"]').on('click', function (event) {
@@ -46,7 +50,7 @@ $(function () {
   });
 })
 
-
+// ======================  images slide up
 $(function() {
   var pics = document.querySelectorAll('.project-pics, .logos, .story-pics');
   function showPictures (){
@@ -62,6 +66,12 @@ $(function() {
   showPictures();
 
   $(document).on("scroll", function () {
-    showPictures();
+    showPictures()
   });
+  $(function(){
+    $('div.logos').animate({
+      paddingTop: '+=32',
+    },500)
+  })
+
 });
