@@ -23,16 +23,17 @@ const $head = $('span.head')
 
 $head.hide().each(function(index){
   $(this)
-    .delay(500 * index)
+    .delay(400 * index)
     .fadeIn(3000)})
     .on('click', function(){$(this).fadeOut(300).fadeIn(1200)
 })
 
 
 
-// =============== headline re-appearing
+// =============== headline re-appearing & hiding nav menu
 $('.top-section').on('click', function(){
   $('.headline').fadeOut(300).fadeIn(1200)
+  $menu.removeClass('nav-menu-mobile-links-visible')
 })
 
 
@@ -68,10 +69,9 @@ $(function() {
   $(document).on("scroll", function () {
     showPictures()
   });
-  $(function(){
-    $('div.logos').animate({
-      paddingTop: '+=32',
-    },500)
-  })
-
 });
+
+
+const $logo = $('.logos img')
+$logo.on('click', function(){$(this).fadeOut(300).fadeIn(600)
+  })
