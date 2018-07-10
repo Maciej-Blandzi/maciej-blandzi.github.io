@@ -19,3 +19,7 @@ $(':input, textarea').on('focus',function(){
   $(this).css('background-color','#FFF')
 })
 
+
+$('.contact, #contact').on('click', function(){
+  $('input[name="input-name"]').focus()
+})
