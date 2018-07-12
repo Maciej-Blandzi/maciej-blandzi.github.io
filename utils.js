@@ -8,7 +8,7 @@ $btn.on('click', function(){
 
 
 $('.nav-home-picture, .nav-home-text, .nav-menu-mobile-links').on('click', function(){
-    $menu.removeClass('nav-menu-mobile-links-visible')
+  $menu.removeClass('nav-menu-mobile-links-visible')
 })
 
 
@@ -20,6 +20,6 @@ $(':input, textarea').on('focus',function(){
 })
 
 
-$('.contact, #contact').on('click', function(){
+$('.cont').on('click', function(){
   $('input[name="input-name"]').focus()
 })

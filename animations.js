@@ -73,5 +73,17 @@ $(function() {
 
 
 const $logo = $('.logos img')
-$logo.on('click', function(){$(this).fadeOut(300).fadeIn(600)
+$logo
+  .on('click', function(){
+  $(this).fadeOut(300).fadeIn(600)
   })
+  .on('mouseover',function(){
+    $(this).animate({
+      height: '1rem',
+      width: '+=0'
+    })})
+  .on('mouseout', function(){
+    $(this).animate({
+      height: '4rem'
+    })
+    })
