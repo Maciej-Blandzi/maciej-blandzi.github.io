@@ -72,6 +72,7 @@ $(function() {
 });
 
 
+// logo icons animated
 const $logo = $('.logos img')
 $logo
   .on('click', function(){
@@ -81,9 +82,24 @@ $logo
     $(this).animate({
       height: '1rem',
       width: '+=0'
+    },400,'swing',function(){
+      $(this).animate({
+        height: '4rem',
+        maxWidth: '10%'
+      })
     })})
   .on('mouseout', function(){
     $(this).animate({
       height: '4rem'
     })
     })
+
+//accordion
+const $accButton = $('.accBtn')
+
+$('.accordion').on('click','.accBtn',function(){
+  $(this)
+    .next('.accTitle')
+    .not(':animated')
+    .slideToggle()
+})
