@@ -219,3 +219,27 @@ textarea {
   margin-bottom: 2em;
 }
 
+
+.accordion{
+  list-style-type: none;
+  font-size: 1.2rem;
+  width: 80vw;
+}
+.accBtn{
+  max-width: 80%;
+  background-color: #d6d6d6;
+  color: #0f226c;
+  padding: 3px 0 3px 40px;
+  border-bottom: 1px #0f226c solid;
+  cursor: pointer;
+}
+.accTitle{
+  display:none
+}
+.accordion img{
+  max-width: 70%;
+  box-shadow: 0 0 30px;
+  margin-top: .5rem;
+  margin-left: 5%;
+  max-height: 10rem;
+}
