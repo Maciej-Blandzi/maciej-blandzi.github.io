@@ -48,6 +48,15 @@
   .story-pics-description {
     font-size: 1rem;
   }
+
+  .carousel {
+    width: 80%;
+    height: 4em;
+  }
+
+  .pic img{
+    height: 4em;
+  }
 }
 
 
