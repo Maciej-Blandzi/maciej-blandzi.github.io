@@ -53,7 +53,7 @@ $(function () {
 
 // ======================  images slide up
 $(function() {
-  var pics = document.querySelectorAll('.project-pics, .logos, .story-pics');
+  var pics = document.querySelectorAll('.logos, .carousel, .story-pics');
   function showPictures (){
     pics.forEach(function (element) {
       var elementRect = element.getBoundingClientRect();
@@ -95,8 +95,6 @@ $logo
     })
 
 //accordion
-const $accButton = $('.accBtn')
-
 $('.accordion').on('click','.accBtn',function(){
   $(this)
     .next('.accTitle')
