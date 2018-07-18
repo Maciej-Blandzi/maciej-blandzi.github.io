@@ -57,6 +57,9 @@
   .pic img{
     height: 4em;
   }
+  .pic-btn {
+    height: 1.2em;
+  }
 }
 
 
