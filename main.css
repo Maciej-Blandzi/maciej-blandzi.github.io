@@ -148,10 +148,12 @@ a:hover {
 
 .img-description {
   font: normal 700 1rem "Lato", serif;
-  color: #868686;
-  text-shadow: 1px 3px #090d2b;
+  color: #000;
+  text-shadow: 1px 1px #868686;
   letter-spacing: 1ch;
   border:1px #868686 solid;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .story-container {
@@ -197,9 +199,10 @@ a:hover {
 }
 
 .contact-area {
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-size: 1.4rem;
-  min-width: 20%;
+  min-width: 30%;
+  line-height: 2.3rem;
 }
 
 .contact-description {
@@ -209,6 +212,7 @@ a:hover {
 
 .contact-form {
   text-align: center;
+  line-height: 1.5rem;
 }
 
 input,
