@@ -58,7 +58,7 @@ $(function () {
 
 // ======================  images slide up
 $(function() {
-  var pics = document.querySelectorAll('.logos, .carousel, .story-pics');
+  var pics = document.querySelectorAll('.logos, .slider, .story-pics');
   function showPictures (){
     pics.forEach(function (element) {
       var elementRect = element.getBoundingClientRect();
@@ -98,11 +98,3 @@ $logo
       height: '4rem'
     })
     })
-
-//accordion
-$('.accordion').on('click','.accBtn',function(){
-  $(this)
-    .next('.accTitle')
-    .not(':animated')
-    .slideToggle()
-})
