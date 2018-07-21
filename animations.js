@@ -28,7 +28,10 @@ $head.hide().each(function(index){
 })
 
  const $headline = $('.headline2')
-$headline.on('click', function(){$('.headline2').fadeOut(300).fadeIn(1200)
+
+$headline.on('click', function(){
+  $(this).fadeOut(300).fadeIn(1200)
+})
 
 
 
