@@ -24,9 +24,11 @@ const $head = $('span.head')
 $head.hide().each(function(index){
   $(this)
     .delay(400 * index)
-    .fadeIn(3000)})
-    .on('click', function(){$(this).fadeOut(300).fadeIn(1200)
+    .fadeIn(3000)
 })
+
+ const $headline = $('.headline2')
+$headline.on('click', function(){$('.headline2').fadeOut(300).fadeIn(1200)
 
 
 
