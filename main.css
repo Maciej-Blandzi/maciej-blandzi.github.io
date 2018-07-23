@@ -147,13 +147,13 @@ a:hover {
 }
 
 .img-description {
-  font: normal 700 1rem "Lato", serif;
+  font: normal 700 1.3rem "Lato", serif;
   color: #000;
   text-shadow: 1px 1px #868686;
   letter-spacing: 1ch;
-  border:1px #868686 solid;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.12);
+  border:1px #000000 solid;
+  padding: 8px;
+  background-color: rgba(134, 134, 134, 0.73);
 }
 
 .story-container {
@@ -201,7 +201,7 @@ a:hover {
 .contact-area {
   margin-top: 3rem;
   font-size: 1.4rem;
-  min-width: 30%;
+  min-width: 20%;
   line-height: 2.3rem;
 }
 

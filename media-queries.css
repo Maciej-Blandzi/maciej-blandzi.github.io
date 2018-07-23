@@ -53,6 +53,10 @@
     width: 80%;
   }
 
+  .img-description{
+    font-size: 10px;
+  }
+
   /*====== jquery carousel */
   /*.carousel {*/
     /*width: 80%;*/
