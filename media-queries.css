@@ -5,7 +5,7 @@
   }
 
   .item {
-    height: 50vh;
+    height: 70vh;
   }
 
   .container {
@@ -107,6 +107,10 @@
     padding: 10px;
     line-height: 1.4;
   }
+
+  .img-description {
+     font-size: .6rem;
+   }
 }
 
 /*  =============================  <380px ========================================*/
@@ -124,9 +128,5 @@
     align-items: center;
     justify-content: center;
     width:49%;
-  }
-
-  .img-description {
-    font-size: .6rem;
   }
 }
