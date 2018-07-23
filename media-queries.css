@@ -3,6 +3,14 @@
   .img-description {
     font-size: .8rem;
   }
+
+  .item {
+    height: 50vh;
+  }
+
+  .container {
+    width: 80%;
+  }
 }
 
 /*  =============================  <780px ========================================*/
@@ -53,10 +61,6 @@
 
   .story-pics-description {
     font-size: 1rem;
-  }
-
-  .container {
-    width: 90%;
   }
 
   /*====== jquery carousel */

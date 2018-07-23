@@ -146,14 +146,14 @@ a:hover {
   margin-bottom: -1rem;
 }
 
-.item img {
-  min-width:100%;
-  min-height: 83%;
-  max-height:84%;
+.item {
+  height: 50vh;
 }
 
-.item {
-  height: 9em;
+.item img {
+  min-width:100%;
+  min-height: 80%;
+  max-height:81%;
 }
 
 .carousel-caption {
@@ -233,6 +233,7 @@ textarea {
   border-radius: 5px;
   font: normal 300 1.1rem "Lato", sans-serif;
   padding: 9px;
+  color: #090d2b;
 }
 
 textarea {
