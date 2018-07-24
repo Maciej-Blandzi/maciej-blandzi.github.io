@@ -8,7 +8,7 @@ body {
 }
 
 a,
-a:visited
+a:visited,
 a:focus {
   text-decoration: none;
   color: #fff;
@@ -137,9 +137,14 @@ a:hover {
   margin: 1em 0;
 }
 
+
 .carousel {
   width: 100%;
   box-shadow: 0 0 30px #0f226c;
+}
+
+.carousel-control {
+  width: 25%;
 }
 
 .carousel-indicators {

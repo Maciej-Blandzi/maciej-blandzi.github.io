@@ -58,7 +58,7 @@ $(function () {
 
 // ======================  images slide up
 $(function() {
-  var pics = document.querySelectorAll('.logos, .slider, .story-pics');
+  var pics = document.querySelectorAll('.logos, .slider, .story-pics, .contact-description, .contact-area');
   function showPictures (){
     pics.forEach(function (element) {
       var elementRect = element.getBoundingClientRect();
@@ -98,3 +98,14 @@ $logo
       height: '4rem'
     })
     })
+
+// positioning carousel after click
+const $carouselBtn  = $('.glyphicon-chevron-left, .glyphicon-chevron-right, .glyphicon, .left, .right, .carousel-control')
+const $slider = $('.slider')
+
+
+$carouselBtn.on('click', function () {
+  $slider.scrollY(200)
+
+})
+
