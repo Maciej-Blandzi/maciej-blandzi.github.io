@@ -151,6 +151,12 @@ a:hover {
   margin-bottom: -1rem;
 }
 
+.carousel-indicators li,
+.carousel-indicators .active{
+  width: 30px;
+  margin: 0 10px;
+}
+
 .item {
   height: 60vh;
 }

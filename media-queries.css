@@ -137,6 +137,11 @@
   .carousel-caption {
     margin-bottom: -.5rem;
   }
+
+  .carousel-indicators li,
+  .carousel-indicators .active{
+    width: 20px;
+  }
 }
 
 /*  =============================  <380px ========================================*/

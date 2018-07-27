@@ -105,7 +105,7 @@ const $slider = $('.slider')
 
 
 $carouselBtn.on('click', function () {
-  $slider.scrollY(200)
+  $slider.scrollY()
 
 })
 
